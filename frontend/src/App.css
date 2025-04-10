@@ -1,0 +1,82 @@
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://images5.alphacoders.com/380/380057.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  max-height: 80%;
+  width: 100%;
+  max-width: 600px;
+  background-color: transparent; /* Fully transparent container */
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Header Styles */
+.header {
+  margin-top: 10px;
+}
+
+.app-name {
+  font-size: 90px;
+  color: #ffffff; /* Pure white text */
+  background-color: rgba(4, 18, 33, 0.8); /* Semi-transparent dark gray */
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-transform: uppercase; /* Adds emphasis */
+  font-weight: bold; /* Bolder text */
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+  margin: 40px 0;
+}
+
+.welcome-message h2 {
+  font-size: 64px; /* Reduced for better scaling */
+  margin-bottom: 30px;
+}
+
+.welcome-message p {
+  font-size: 36px;
+  white-space: nowrap; /* Ensures single-line display */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optional for truncation */
+}
+
+/* Footer Styles */
+.footer {
+  margin-bottom: 20px;
+}
+
+.book-button {
+  font-size: 36px;
+  padding: 15px 30px;
+  background-color: #e74c3c; /* Softer red */
+  color: #ffffff;
+  border: none;
+  border-radius: 50px; /* Rounded button design */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
