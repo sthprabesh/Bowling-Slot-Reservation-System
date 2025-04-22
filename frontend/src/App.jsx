@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import LoginSignupPage from './components/LoginSignupPage';
 import SlotBookingPage from './components/SlotBookingPage';
-import Dashboard from './components/Dashboard'; // Main Dashboard Component
+import LoginSignupPage from './components/LoginSignupPage';
+import Dashboard from './components/Dashboard'; 
 import AccountInfo from './components/AccountInfo';
 import BookingHistory from './components/BookingHistory';
 import MyReservation from './components/MyReservation';
@@ -13,33 +13,26 @@ const MainPageContent = () => {
   const navigate = useNavigate();
 
   const handleBookSlot = () => {
-    navigate('/login'); // Redirect to the LoginSignupPage
+    navigate('/login'); // Redirect to LoginSignupPage
   };
 
   return (
     <div className="main-page">
-      <div className="hero-section">
-        <h1 className="title">BOWL-ME</h1>
-        <p className="subtitle">Welcome to Bowl-Me!</p>
-        <p className="description">
-          Your one-stop platform to easily book bowling slots and enjoy the game, hassle-free. 🎳 Let's get rolling!
-        </p>
-        <button className="cta-button" onClick={handleBookSlot}>
-          Book a Slot
-        </button>
-      </div>
+      <h1>BOWL-ME</h1>
+      <h2><strong>Welcome to BOWL-ME!</strong></h2>
+      <p>Your one-stop platform to easily book bowling slots and enjoy the game, hassle-free. Let's get rolling!</p>
+      <button onClick={handleBookSlot}>Book a Slot</button>
     </div>
   );
 };
-
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainPageContent />} /> {/* Main Page */}
-        <Route path="/login" element={<LoginSignupPage />} /> {/* Login/Signup Page */}
+        <Route path="/" element={<MainPageContent />} />
         <Route path="/book-slot" element={<SlotBookingPage />} />
+        <Route path="/login" element={<LoginSignupPage />} />
         <Route path="/dashboard/*" element={<Dashboard />}>
           <Route path="account-info" element={<AccountInfo />} />
           <Route path="booking-history" element={<BookingHistory />} />
@@ -47,7 +40,6 @@ const App = () => {
           <Route path="logout" element={<Logout />} />
         </Route>
       </Routes>
-
     </Router>
   );
 };

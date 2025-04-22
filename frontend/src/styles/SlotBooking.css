@@ -1,73 +1,77 @@
-/* SlotBooking.css */
+/* Slot Booking Page */
 .slot-booking-page {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 40px 20px;
-    background: url('bowling-alley-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /* Allow stacking elements vertically */
-    justify-content: center; /* Center elements vertically */
-    align-items: center; /* Center elements horizontally */
-  }
-  
-  h2 {
-    font-size: 50px; /* Larger font size for emphasis */
-    color: #f30b1b;
-    margin-bottom: 30px; /* Add spacing below the heading */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  }
-  
-  form {
-    width: 80%;
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-  }
-  
-  label {
-    display: block;
-    font-size: 18px;
-    color: #ffcc00;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  
-  input[type="date"],
-  input[type="time"],
-  input[type="number"],
-  select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background: #444;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  button[type="submit"] {
-    background: #ff5733;
-    color: #fff;
-    border: none;
-    padding: 14px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:disabled {
-    background: #d3d3d3;
-    cursor: not-allowed;
-  }
-  
-  button[type="submit"]:hover:not(:disabled) {
-    background: #c13a1b;
-  }
-  
+  text-align: center;
+  padding: 40px 20px;
+  background: url('../assets/dashboard.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Headings */
+h2 {
+  font-size: 50px;
+  color: #f30b1b;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Form Styling */
+form {
+  width: 80%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Input Fields */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background: #c13a1b;
+}

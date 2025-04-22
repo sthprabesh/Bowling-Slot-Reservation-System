@@ -1,0 +1,27 @@
+/* Cancellation Policy Side Panel (Fixed Far Right) */
+.cancellation-policy {
+    width: 300px;
+    padding: 20px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Change position to fixed for consistent placement */
+    right: 5%; /* Move it to the far right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust positioning */
+}
+
+/* Header Styling */
+.cancellation-policy h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Policy Content */
+.cancellation-policy p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

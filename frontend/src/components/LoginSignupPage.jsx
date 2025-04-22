@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/LoginSignupPage.css'; // Import the CSS file for styling
 
 const LoginSignupPage = () => {
     const [isLogin, setIsLogin] = useState(true); // Tracks login vs sign-up mode
@@ -40,7 +41,7 @@ const LoginSignupPage = () => {
                     password: userDetails.password,
                 });
                 localStorage.setItem('userId', response.data.userId);
-                navigate('/book-slot'); // Redirect to booking page
+                navigate('/dashboard/*'); // Redirect to booking page
             } catch (error) {
                 alert(error.response?.data?.error || 'Login failed. Please try again.');
             }

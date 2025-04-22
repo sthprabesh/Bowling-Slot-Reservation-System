@@ -13,214 +13,55 @@ body {
 
 /* Main Page */
 .main-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   height: 100vh;
-}
-
-.hero-section {
-  background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Depth shadow */
-}
-
-.title {
-  font-size: 60px;
-  color: #ff4757; /* Vibrant red color */
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.subtitle {
-  font-size: 28px;
-  color: #2f3640;
-  margin-bottom: 10px;
-}
-
-.description {
-  font-size: 20px;
-  color: #353b48;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  font-size: 22px;
-  padding: 15px 30px;
-  color: white;
-  background-color: #ff4757;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e84118; /* Darker red hover effect */
-  transform: scale(1.05); /* Subtle zoom effect */
-}
-
-/* Login Container */
-.login-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  height: auto;
-  max-height: 80%;
-  width: 100%;
-  max-width: 600px;
-  background-color: transparent; /* Fully transparent container */
-  padding: 30px;
+  padding: 20px;
   border-radius: 15px;
 }
 
-/* Header Styles */
-.header {
-  margin-top: 10px;
+/* Title Styles */
+.main-page h1 {
+  font-size: 72px;
+  margin-bottom: 130px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.app-name {
-  font-size: 90px;
-  color: #ffffff; /* Pure white text */
-  background-color: rgba(4, 18, 33, 0.8); /* Semi-transparent dark gray */
-  padding: 15px 25px;
-  border-radius: 10px;
-  text-transform: uppercase; /* Adds emphasis */
-  font-weight: bold; /* Bolder text */
-}
-
-/* Welcome Message Styles */
-.welcome-message {
-  margin: 40px 0;
-}
-
-.welcome-message h2 {
-  font-size: 64px;
+.main-page h2 {
+  font-size: 50px;
+  color: #dcdde1;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.welcome-message p {
-  font-size: 36px;
-}
-
-/* Footer Styles */
-.footer {
+/* Welcome Text */
+.main-page p {
+  font-size: 40px;
+  color: #dcdde1;
   margin-bottom: 20px;
 }
 
-.book-button {
-  font-size: 36px;
-  padding: 15px 30px;
-  background-color: #e74c3c; /* Softer red */
+/* Call-To-Action Button */
+.main-page button {
+  font-size: 28px;
+  padding: 15px 40px;
+  background: linear-gradient(45deg, #ff4757, #f53b57);
   color: #ffffff;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px #ff4757, 0px 0px 20px #f53b57;
+  transition: all 0.3s ease;
 }
 
-.book-button:hover {
-  background-color: #c0392b; /* Darker red on hover */
-  transform: scale(1.05); /* Slight zoom effect */
-}
-
-
-
-.login-signup-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  max-width: 500px;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.login-signup-container h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #e74c3c;
-  text-transform: uppercase;
-}
-
-.login-signup-container form {
-  width: 100%;
-}
-
-.login-signup-container label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #ffffff;
-}
-
-.login-signup-container input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.login-signup-container input::placeholder {
-  color: #cccccc;
-}
-
-.login-signup-container input:focus {
-   border-color: #e74c3c; /* Red accent for focus */ 
-   outline: none; } 
-   
-/* Buttons */ 
-.login-signup-container button { 
-  width: 100%; 
-  padding: 12px 0; 
-  font-size: 18px; 
-  background-color: #e74c3c; /* Matches existing button theme */ 
-  color: #ffffff; 
-  border: none; 
-  border-radius: 8px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-} 
-
-.login-signup-container button:hover { 
-  background-color: #c0392b; /* Slightly darker red on hover */ 
-  transform: scale(1.05); /* Subtle zoom effect */ 
-} 
-
-/* Toggle Links */ 
-.login-signup-container p { 
-  margin-top: 10px; 
-  color: #4CAF50; /* Green accent for toggle links */ 
-  cursor: pointer; 
-  text-align: center; 
-} 
-
-.login-signup-container p:hover { 
-  text-decoration: underline; /* Add hover effect for clarity */ 
-}
-
-.popup {
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 16px;
+/* Button Hover Effect */
+.main-page button:hover {
+  background: linear-gradient(45deg, #e84118, #c0392b);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #e84118, 0px 0px 30px #c0392b;
 }

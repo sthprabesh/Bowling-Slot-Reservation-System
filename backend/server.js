@@ -15,6 +15,7 @@ const PORT = 5000;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.json()); // Parse JSON requests
 
 // Test database connection
 app.get('/test', async (req, res) => {

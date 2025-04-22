@@ -59,15 +59,38 @@ router.post('/login', async (req, res) => {
 // Logout Route
 router.post('/logout', async (req, res) => {
     try {
-        // If using JWT authentication, clear the token (handled in frontend)
-        // If using sessions:
-        req.session = null; // Clears session
+        // Destroy session properly
+        req.session.destroy((err) => {
+            if (err) {
+                console.error('Error destroying session:', err);
+                return res.status(500).json({ error: 'Error logging out' });
+            }
 
-        res.status(200).json({ message: 'User logged out successfully' });
-
+            res.status(200).json({ message: 'User logged out successfully' });
+        });
     } catch (error) {
         console.error('Logout error:', error.message);
-        res.status(500).json({ error: 'Error logging out' });
+        res.status(500).json({ error: 'Unexpected error logging out' });
+    }
+});
+
+
+router.get('/users/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const result = await pool.query(
+            'SELECT fullname, phone_number, email FROM users WHERE id = $1',
+            [id]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(404).json({ error: 'User not found.' });
+        }
+
+        res.status(200).json(result.rows[0]); // Respond with user details
+    } catch (error) {
+        console.error('Error fetching user data:', error.message);
+        res.status(500).json({ error: 'An unexpected error occurred.' });
     }
 });
 

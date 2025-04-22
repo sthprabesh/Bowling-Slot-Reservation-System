@@ -1,55 +1,72 @@
 /* Dashboard Layout */
 .dashboard {
+    background: url('../assets/dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    height: 100vh; /* Full viewport height */
-    /*background: url('/path/to/current-picture.jpg') no-repeat center center fixed; /* Background image */
-    /*background-size: cover; /* Ensure the image covers the entire page */
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    width: 350px; /* Fixed width for the sidebar */
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Sidebar - Centered on the Left */
+.sidebar {
+    width: 300px;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(31, 31, 31, 0.8);
     padding: 20px;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); /* Add depth */
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
+}
+
+/* Sidebar Items */
+.sidebar ul {
+    list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-  }
-  
-  .sidebar li {
-    padding: 15px;
-    margin-bottom: 10px;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
     cursor: pointer;
-    background-color: #ff4757; /* Red button-like background */
-    border-radius: 5px;
-    text-align: center;
     font-size: 18px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sidebar li:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-  }
-  
-  /* Main Content Styles */
-  .main-content {
-    flex-grow: 1; /* Fill remaining space */
+    color: white;
+    background-color: #ff4757;
+    border-radius: 5px;
+    padding: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar li:hover {
+    background-color: #e84118;
+    transform: scale(1.1);
+}
+
+/* Main Content - Centers the Welcome Heading */
+.main-content {
+    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-  }
-  
-  .main-content h1 {
+    padding: 40px;
+    width: calc(100vw - 200px);
+    margin-left: 200px;
+}
+
+/* Welcome Heading */
+.main-content h1 {
     font-size: 55px;
-    color: white; /* Text visible against background */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
-  }
-  
+    color: #fa5407;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    align-self: center;
+}

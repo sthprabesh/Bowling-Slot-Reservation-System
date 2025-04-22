@@ -1,0 +1,86 @@
+.login-signup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background to contrast with the vibrant backdrop */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Deeper shadow for a floating effect */
+    border-radius: 15px; /* Smooth rounded corners for modern aesthetics */
+    padding: 40px; /* Spacious layout */
+    width: 420px; /* Balanced width for inputs and readability */
+    color: #fff; /* White text for contrast on a dark background */
+  }
+  
+  .login-signup-container h2 {
+    text-align: center;
+    font-size: 35px; /* Slightly larger font for emphasis */
+    margin-bottom: 20px;
+    color: #ffcc00; /* Golden hue for a welcoming tone */
+    font-weight: bold;
+  }
+  
+  .login-signup-container label {
+    font-size: 16px;
+    color: #d3d3d3; /* Softer white for labels */
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .login-signup-container input[type="text"],
+  .login-signup-container input[type="email"],
+  .login-signup-container input[type="password"],
+  .login-signup-container input[type="tel"] {
+    width: 100%;
+    padding: 14px; /* Increased padding for touch-friendly UI */
+    margin-bottom: 15px;
+    border: none; /* Clean input style */
+    border-radius: 8px; /* Consistent with container corners */
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* Subtle white background for focus */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333; /* Dark text for readability */
+  }
+  
+  .login-signup-container input:focus {
+    outline: 2px solid #ffcc00; /* Highlighted focus for accessibility */
+  }
+  
+  .login-signup-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff6600, #ffcc00); /* Warm gradient for an inviting feel */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .login-signup-container button:hover {
+    transform: scale(1.05); /* Subtle pop effect */
+    background: linear-gradient(45deg, #ffcc00, #ff6600); /* Reverse gradient for hover */
+  }
+  
+  .login-signup-container p {
+    text-align: center;
+    color: #ffcc00; /* Matches header for a cohesive design */
+    font-size: 14px;
+    margin-top: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .login-signup-container p:hover {
+    color: #fff; /* Subtle interaction cue */
+  }
+  
+  body {
+    background: url('https://images5.alphacoders.com/380/380057.jpg') no-repeat center center fixed; /* Ensure background stays fixed */
+    background-size: cover; /* Covers the viewport */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+  }
+  

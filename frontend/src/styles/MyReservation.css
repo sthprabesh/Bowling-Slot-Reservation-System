@@ -1,0 +1,138 @@
+/* Reservation Page (Keep background fixed) */
+.reservation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Prevents entire page movement */
+    padding-top: 80px; /* Adds spacing without moving background */
+    position: relative;
+    height: 100vh;
+}
+
+/* Reservation Container */
+.my-reservation {
+    max-width: 700px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Reservation List (Only this moves) */
+.reservation-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Moves reservations down */
+}
+
+/* Individual Reservation Item */
+.reservation-item {
+    background: #848282;
+    padding: 20px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.reservation-item:hover {
+    transform: scale(1.05);
+    background: #797979;
+}
+
+/* Edit & Delete Buttons */
+.edit-button, .delete-button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #388E3C;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #ff5733; /* Red */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c13a1b;
+}
+
+/* Edit Form (Ensuring it doesn’t shift background) */
+.edit-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    position: relative; /* Keeps content independent */
+    margin-top: 20px; /* Moves only the form */
+}
+
+/* Edit Form Labels */
+.edit-form label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Edit Form Input Fields */
+.edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Edit Form Buttons */
+.edit-form button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Save Button */
+.edit-form button:first-of-type {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-form button:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+/* Cancel Button */
+.edit-form button:last-of-type {
+    background-color: #6c757d;
+    color: white;
+}
+
+.edit-form button:last-of-type:hover {
+    background-color: #495057;
+}
