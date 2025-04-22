@@ -21,3 +21,4 @@
 | 19.04.2025 | 7 | Backend Refinements  | Implemented advanced booking and cancellation logic, optimized database queries. Fixed issues with edit and delete reservations functionality.  |
 | 20.04.2025 | 6 | Error Handling and Testing  | Enhanced backend error handling and fixed CORS issues for seamless communication.  |
 | 21.04.2025 | 5 | UI Enhancements  | Improved design responsiveness and added CSS animations for buttons.  |
+| 22.04.2025 | 5 | Deployment | Successfully deployed the project to GitHub for version control and collaboration.  |
