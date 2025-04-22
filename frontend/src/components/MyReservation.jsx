@@ -4,7 +4,6 @@ import '../styles/CancellationPolicy.css';
 import CancellationPolicy from './CancellationPolicy';
 
 import axios from 'axios';
-
 const MyReservation = () => {
     const [reservations, setReservations] = useState([]);
     const [loading, setLoading] = useState(true);
