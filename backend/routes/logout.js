@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.post('/logout', async (req, res) => {
     try {
-        req.session = null; // If using session-based authentication
+        req.session = null; // using session-based authentication
         res.status(200).json({ message: 'User logged out successfully' });
     } catch (error) {
         console.error('Logout error:', error.message);
