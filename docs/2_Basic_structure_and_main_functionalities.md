@@ -6,7 +6,7 @@ This document explains the development progress of the **Bowling Slot Reservatio
 
 ## 1. Environment
 - The system is currently running locally for development and testing purposes.
-- Future deployment is planned on **AWS** (Amazon Web Services) or a similar cloud hosting platform to ensure scalability and secure access for users.
+- Future deployment is planned on **AZURE**  or a similar cloud hosting platform to ensure scalability and secure access for users.
 - Cloud hosting will enhance performance and make the system globally accessible.
 
 ---
@@ -69,7 +69,7 @@ This document explains the development progress of the **Bowling Slot Reservatio
 
 ## 7. Code Quality and Documentation
 - Code is organized and modular for maintainability:
-  - Separate components like `Login.jsx`, `Signup.jsx`, and `SlotBookingPage.jsx` make it easy to update or debug features.
+  - Separate components like `LoginSignupPage.jsx`, and `SlotBookingPage.jsx` make it easy to update or debug features.
   - Scoped CSS prevents style conflicts across components.
 - Backend functions are commented to explain their purpose and logic.
 - API documentation is maintained using **Postman**, detailing request structures and expected responses.
