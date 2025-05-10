@@ -1,0 +1,25 @@
+{
+  "name": "bowling-slot-reservation-system",
+  "version": "1.0.0",
+  "description": "This document explains the development progress of the **Bowling Slot Reservation System** during Phase 2, highlighting the environment setup, architecture, database management, features, code documentation, testing, and user interface enhancements.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sthprabesh/Bowling-Slot-Reservation-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sthprabesh/Bowling-Slot-Reservation-System/issues"
+  },
+  "homepage": "https://github.com/sthprabesh/Bowling-Slot-Reservation-System#readme"
+}
